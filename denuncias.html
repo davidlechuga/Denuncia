@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blur Menu with CSS3 Transitions</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style5.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+    <div class="container-fluid"
+        style="background-image: url(images/pattern.png), url(images/juicio.jpeg); background-size: contain; padding-bottom: 65px;">
+        <div class="header">
+            <img src="images/gobmex.jpg" style="width: 280px; height: 170px; margin-left: 50px;">
+            <span class="right" style="margin-top: 50px;">
+                <h1> <a href="index5.html"> Inicio <a href="denuncias.html"> Denuncias </a> <a href="contacto.html">
+                            Contáctanos </a> </a></h1>
+            </span>
+            <div class="clr"></div>
+        </div>
+        <div class="content">
+            <ul class="bmenu">
+                <li><a href="#">Denuncia</a></li>
+                <li><a href="#">Ciudadana</a></li>
+                <br>
+                <br>
+                <br>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Eficacia</a></li>
+                <li><a href="#">Atención</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row" style="width: 100%; margin-top: 50px;">
+    <!-- FORM -->
+    
+    <section class="row contacto mt-4 mx-0 px-0" style="width: 100%;" id="contact">
+        <div class="col-12 my-4 ,mt-5 contact_title">
+            <h2><span>CONTACTO</span></h2>
+            <div class="alert"> Tu mensaje se ha enviado </div>
+        </div>
+        <!-- FORM -->
+        <section class="col-12 contacto_form"style="padding: 30px;">
+            <form action="" class="formulario mb-5" id="contactForm">
+                <div> Información del Denunciante </div>
+
+                <div class="form-group mt-3">
+                    <label for="nombre">NOMBRE COMPLETO: <span class="importante">*</span></label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" required>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="email">E-MAIL: <span class="importante">*</span></label>
+                    <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="nacimiento">Fecha de Nacimiento (05/04/1995 mm/dd/aaaa): <span class="importante">*</span></label>
+                    <input type="text" class="form-control" name="nacimiento" id="nacimiento" required>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="tel">TELÉFONO: <span class="importante">*</span></label>
+                    <input type="tel" class="form-control" name="tel" id="tel" required>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="direc"> Dirección: <span class="importante">*</span></label>
+                    <input type="text" class="form-control" name="direc" id="direc" required>
+                </div>
+                <div className="form-group col-md-12">
+                    <label> Formular una  Querella o una carpeta de investigación: </label>
+                        <input type="text" value="Querella" class="form-control" name="formular" id="formular" required>
+                    </select>
+                </div>
+                <div className="form-group col-12">
+                    <label> Tipo de delito : </label>
+                    <div class="row" style="margin-left: 30px;">
+                        <ol class="col-6">
+                            <li>Homicidio doloso</li>
+                            <li>Secuestro</li>
+                            <li>Lesion dolosa con arma blanca</li>
+                            <li>Extorsión</li>
+                        
+                        </ol>
+                        <ol class="col-6">
+                        
+                            <li>Robo con violencia a transeúnte</li>
+                            <li>Robo sin violencia a transeúnte</li>
+                            <li>Robo con violencia a vehículo</li>
+                            <li>Robo sin violencia a transeúnte</li>
+                        </ol>
+                    </div>
+                    <input type="text" value="Extorsión" class="form-control" name="selectdelito" id="selectdelito" required>
+
+                </div>
+                <div class="form-group mt-4">
+                    <label for="lugar">Lugar de los hechos: <span class="importante">*</span></label>
+                    <input type="text" class="form-control" name="lugar" id="lugar" required>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="time">Hora aprox. de los hechos: <span class="importante">*</span></label>
+                    <input type="time" class="form-control" name="time" id="time" required>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="palabras"> Palabras clave: <span class="importante">*</span></label>
+                    <input type="text" class="form-control" name="palabras" id="palabras" required>
+                </div>
+                <div class="form-group">
+                    <label for="hechos">Descripcion de los Hechos: <span class="importante">*</span></label>
+                    <textarea name="hechos" id="hechos" class="form-control" maxlength="200"></textarea>
+                </div>
+                <button class="btn-danger form-boton btn-lg btn-block mt-4" type="submit">ENVIAR</button>
+            </form>
+        </section>
+      
+       
+    
+        <div class="row" style=" background: #01342C; width: 103%; height: 100px; margin-top: 70px;"> </div>
+        <div class="row" style="background-image: url('images/quetzal.png');width: 103%;height: 46px;"> </div>
+
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+    <!--This script (database) is not in the video and is new-->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+    <!--FUNCTIONs to connect firebase config -->
+    <script src="main.js"></script>
+
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
