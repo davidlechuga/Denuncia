@@ -95,6 +95,14 @@
 		height: 300px;
 		margin-left: 13px;
 	}
+
+	.rowchat{
+		position: fixed;
+    	background: aliceblue;
+    	z-index: 1;
+    	top: 100px;
+    	right: 3px;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -104,3 +112,12 @@
 		margin-left: 13px;
 	}
 }
+
+
+
+
+
+
+
+
+
